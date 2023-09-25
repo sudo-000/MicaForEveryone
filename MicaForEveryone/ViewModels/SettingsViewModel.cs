@@ -134,38 +134,25 @@ namespace MicaForEveryone.ViewModels
             if (BackdropTypes.Count <= 0)
             {
                 BackdropTypes.Add(BackdropType.Default);
-                if (IsMicaSupported)
-                {
+                BackdropTypes.Add(BackdropType.Acrylic);
+                    BackdropTypes.Add(BackdropType.Tabbed);
                     BackdropTypes.Add(BackdropType.None);
                     BackdropTypes.Add(BackdropType.Mica);
-                }
-                if (IsBackdropSupported)
-                {
-                    BackdropTypes.Add(BackdropType.Acrylic);
-                    BackdropTypes.Add(BackdropType.Tabbed);
-                }
             }
 
             if (TitlebarColorModes.Count <= 0)
             {
-                TitlebarColorModes.Add(TitlebarColorMode.Default);
-                if (IsImmersiveDarkModeSupported)
-                {
                     TitlebarColorModes.Add(TitlebarColorMode.System);
                     TitlebarColorModes.Add(TitlebarColorMode.Light);
                     TitlebarColorModes.Add(TitlebarColorMode.Dark);
-                }
             }
 
             if (CornerPreferences.Count <= 0)
             {
                 CornerPreferences.Add(CornerPreference.Default);
-                if (IsCornerPreferenceSupported)
-                {
                     CornerPreferences.Add(CornerPreference.Square);
                     CornerPreferences.Add(CornerPreference.Rounded);
                     CornerPreferences.Add(CornerPreference.RoundedSmall);
-                }
             }
 
             PopulatePanes();
