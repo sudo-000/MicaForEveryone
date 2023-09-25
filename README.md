@@ -1,4 +1,4 @@
-# I removed the limit of Acrylic on Windows 11 21H2, simply forcing that option to show. Not sure if it really works. 
+**I removed the limit of Acrylic on Windows 11 21H2, simply forcing that option to show. Not sure if it really works.**
 
 
 > # Be Iranian's voice!
